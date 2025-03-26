@@ -1,0 +1,199 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Outer container */
+  #Outer-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px; /* Space between First-half and Second-half */
+    width: 100%;
+    height: 100vh;
+    
+    
+    /* 🔥 Animated Background 🔥 */
+    background: linear-gradient(135deg, #F28C38, #ffffff);
+    background-size: 300% 300%;
+    animation: backgroundAnimation 5s linear infinite;
+  }
+  
+  /* Background Animation */
+  @keyframes backgroundAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  /* Welcome Text */
+  #welcome {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 3.5rem;
+   
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeInSlideDown 1.5s forwards;
+  }
+  
+  /* Welcome Text Animation */
+  @keyframes fadeInSlideDown {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* First-half */
+  #First-half {
+    width: 50%;
+    line-height: 10rem;
+  }
+  
+  #Pulse{
+    padding: 9rem;
+    color: white;
+  }
+  
+  /* Logo inside First-half */
+  #First-half img {
+    width: 32rem;
+    filter: drop-shadow(2px 2px 10px rgba(0, 0, 0, 0.3));
+  }
+  /* #Account{
+    
+   
+  } */
+  
+  /* Login Card */
+  .card {
+    width: 400px;
+    height: 500px;
+    padding: 2.5rem;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.2); /* Glass effect */
+    backdrop-filter: blur(15px);
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+  }
+  
+  /* Input Fields */
+  .field {
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    padding: 1em;
+    height: 60px;
+  }
+  
+  .input-icon {
+    height: 1.8em;
+    width: 1.8em;
+    fill: #ffffff;
+  }
+  
+  .input-field {
+    background: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    color: black;
+    font-size: 1.1em;
+    padding-left: 0.5em;
+  }
+  
+  /* Title */
+  .title {
+    margin-bottom: 1.5rem;
+    font-size: 2.2em;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 1px 1px 8px rgba(255, 255, 255, 0.4);
+  }
+  
+  /* Buttons */
+  .btn {
+    margin-top: 2rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    padding: 0.9em 1.5em;
+    background-color: #ffffff;
+    color: #F28C38;
+    box-shadow: 0 8px 24px rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #F28C38;
+    color: #ffffff;
+    box-shadow: 0 8px 24px rgba(242, 140, 56, 0.3);
+  }
+  
+  /* Forgot Password Link */
+  .btn-link {
+    color: black;
+    display: block;
+    font-size: 0.9em;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem; /* Add spacing below the Forgot Password link */
+    transition: color 0.3s ease-out;
+    text-decoration: none;
+  }
+  
+  #Account {
+    display: block;
+    margin-top: 1.5rem; /* Adjust the spacing */
+    color: black;
+    text-decoration: none;
+    font-size: 0.9em;
+  }
+  
+  #Account:hover {
+    text-decoration: underline;
+  }
+  
+  .btn-link:hover {
+    color: #ffffff;
+    text-decoration: underline;
+  }
+  
+  /* Focus Effects */
+  .field input:focus::placeholder {
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  .login-page * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .login-page #Outer-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(135deg, #F28C38, #ffffff);
+    background-size: 300% 300%;
+    animation: backgroundAnimation 5s linear infinite;
+  }

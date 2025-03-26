@@ -1,0 +1,126 @@
+/* home.module.css */
+.firstLanding {
+  display: flex;
+  gap: 2rem;
+}
+
+.animatedBg {
+  background: linear-gradient(135deg, #F28C38, #ffffff);
+  background-size: 300% 300%;
+  animation: backgroundAnimation 5s linear infinite;
+}
+
+.header {
+  width: 100%;
+  height: 100vh;
+}
+
+.headerFirst {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+}
+
+.img4Header {
+  width: 20%;
+  height: 100%;
+  margin-top: 6rem;
+}
+
+.img4Header img {
+  width: 25rem;
+  margin-top: 2rem;
+}
+
+.headerText {
+  width: 80%;
+  display: flex;
+  font-size: 3.5rem;
+  flex-direction: column;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
+  padding-top: 9rem;
+  padding-left: 15rem;
+}
+
+.moodibles {
+  font-size: 2.5rem;
+}
+
+.textHeader {
+  margin-top: 2rem;
+  margin-left: 3rem;
+  width: 15rem;
+  height: 2.5rem;
+  border: 2px solid #ff4500;
+  border-radius: 12px;
+  padding: 1rem;
+  font-size: 1rem;
+  outline: none;
+}
+
+.headerText button {
+  width: 8rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: 8px;
+  padding: 0.4rem;
+  margin-left: 0.5rem;
+  color: white;
+  background-color: black;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.headerSecond {
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.feastFinder {
+  /* Add styles if needed */
+}
+
+.card {
+  width: 700px;
+  height: 254px;
+  padding: 0.8em;
+  background: #f5f5f5;
+  position: relative;
+  overflow: visible;
+  margin-left: 9rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.cardImg {
+  background-color: #ffcaa6;
+  height: 40%;
+  width: 100%;
+  border-radius: 0.5rem;
+  transition: 0.3s ease;
+}
+
+.cardInfo {
+  padding-top: 10%;
+}
+
+.textTitle {
+  font-weight: 900;
+  font-size: 1.2em;
+  line-height: 1.5;
+}
+
+.textBody {
+  font-size: 0.9em;
+  padding-bottom: 10px;
+}
+
+@keyframes backgroundAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}

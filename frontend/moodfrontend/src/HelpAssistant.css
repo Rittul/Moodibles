@@ -1,0 +1,97 @@
+/* Floating Help Button */
+.help-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4caf50;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+  }
+  
+  .help-button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Chat Box Styles */
+  .chat-box {
+    position: fixed;
+    bottom: 70px;
+    right: 20px; 
+    width: 300px;
+    max-height: 400px;
+    background: #fff;
+    border: 2px solid #4caf50;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .chat-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    border-radius: 8px 8px 0 0;
+  }
+  
+  .chat-header h3 {
+    margin: 0;
+    font-size: 1rem;
+  }
+  
+  .close-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .chat-content {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    height: 300px;
+    overflow-y: auto;
+  }
+  
+  .chat-messages {
+    flex-grow: 1;
+  }
+  
+  .input-box {
+    display: flex;
+    gap: 10px;
+    padding-top: 10px;
+  }
+  
+  .input-box input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  .input-box button {
+    padding: 8px 16px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .input-box button:hover {
+    background-color: #45a049;
+  }
+  
