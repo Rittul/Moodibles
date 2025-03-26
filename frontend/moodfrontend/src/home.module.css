@@ -46,6 +46,7 @@
 
 .moodibles {
   font-size: 2.5rem;
+  padding: 6rem;
 }
 
 .textHeader {
@@ -81,46 +82,86 @@
   justify-content: center;
 }
 
-.feastFinder {
-  /* Add styles if needed */
+.feastFinder p {
+      font-size: 1.5rem;
+      padding-left: 4rem;
 }
 
 .card {
-  width: 700px;
-  height: 254px;
-  padding: 0.8em;
-  background: #f5f5f5;
+  width: 480px;
+  height: auto;
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 12px;
   position: relative;
-  overflow: visible;
+  overflow: hidden;
   margin-left: 9rem;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15), 0 3px 6px rgba(0, 0, 0, 0.1);
 }
 
 .cardImg {
   background-color: #ffcaa6;
-  height: 40%;
-  width: 100%;
-  border-radius: 0.5rem;
-  transition: 0.3s ease;
+  height: 140px;
+  width: 140px;
+  border-radius: 8px;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover .cardImg {
+  transform: scale(1.05);
 }
 
 .cardInfo {
-  padding-top: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 1em;
+  gap: 0.5em;
+  flex-grow: 1;
 }
 
 .textTitle {
-  font-weight: 900;
+  font-weight: 700;
   font-size: 1.2em;
-  line-height: 1.5;
+  color: #333;
+  margin-bottom: 0.2em;
+}
+
+.cardDetails {
+  display: flex;
+  gap: 0.5em;
+  align-items: center;
+  font-size: 1em;
+  font-weight: 500;
+  color: #555;
 }
 
 .textBody {
-  font-size: 0.9em;
-  padding-bottom: 10px;
+  font-size: 1em;
+  color: #777;
 }
+
+.cardDetails span {
+  font-weight: bold;
+  color: #333;
+}
+
+
 
 @keyframes backgroundAnimation {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
+}
+#Plate{
+     height: 5rem;
 }

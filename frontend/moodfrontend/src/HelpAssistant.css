@@ -31,6 +31,7 @@
     padding: 10px;
     display: flex;
     flex-direction: column;
+    z-index: 90;
   }
   
   .chat-header {

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&display=swap');
 h1 {
     text-align: center;
     color: white; 
@@ -17,6 +18,7 @@ h1 {
     max-width: 1200px;
     background: none;
     margin-top: 10px; /* Reduced space between nav and categories */
+    
 }
 
 .category {
@@ -45,6 +47,7 @@ h1 {
     border-bottom: 3px solid #e17055; 
     padding-bottom: 8px;
     width: 100%;
+    
 }
 
 .items {
@@ -104,8 +107,13 @@ h1 {
     padding: 40px 20px;
     background: linear-gradient(to right, #ffafbd, #ffc3a0);
     min-height: 100vh;
+    
 }
+.suggest-container h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem ;
 
+}
 .mood-buttons {
     display: flex;
     justify-content: center;
@@ -118,7 +126,7 @@ h1 {
     padding: 12px 24px;
     font-size: 1.2em;
     color: white;
-    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    background: linear-gradient(135deg, #6a11cb, #2575fc,rgb(244, 171, 171));
     border: none;
     border-radius: 25px;
     cursor: pointer;
@@ -138,7 +146,7 @@ h1 {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 30px;
 }
 
 .meal-card {
@@ -148,6 +156,8 @@ h1 {
     overflow: hidden;
     transition: transform 0.3s ease;
     max-width: 240px;
+    margin-top: 2rem;
+    background: linear-gradient(145deg, #ffd08e, #ff775b,rgb(239, 190, 190)); 
 }
 
 .meal-card:hover {
@@ -163,5 +173,6 @@ h1 {
 .meal-card h3 {
     padding: 16px;
     font-size: 1.2em;
-    color: #333;
+    font-family: 'Pacifico';
+    color: black;
 }

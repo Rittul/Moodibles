@@ -39,7 +39,7 @@ const Suggest = () => {
     <>
        <Navbar />
     <div className="suggest-container">
-      <h1>What's Your Mood?</h1>
+      <h1>Craving? Let your mood decide</h1>
 
       <div className="mood-buttons">
         {Object.keys(moodToCategory).map((mood) => (

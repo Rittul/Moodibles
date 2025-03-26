@@ -1,171 +1,172 @@
 body {
-    min-height: 100vh;
-    background: linear-gradient(to right, #fefcbf, #fed7aa, #bbf7d0);
-    margin: 0;
-    font-family: Arial, sans-serif;
-  }
+  min-height: 100vh;
+  background: linear-gradient(to right, #fefcbf, #fed7aa, #bbf7d0);
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
 
-  nav {
-    /* background-color: #e9c847; */
-    padding: 1rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border: none;
-  }
+nav {
+  /* background-color: #e9c847; */
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: none;
+}
 
-  nav h1 {
-    font-size: 2rem;
-    font-weight: bold;
-    color: white;
-    text-align: center;
-    margin: 0;
-  }
+nav h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  margin: 0;
+}
 
-  .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100vh;
-    padding-top: 1rem;
-  }
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding-top: 1rem;
+  
+}
 
-  .mood-section {
-    padding: 2rem;
-    background: rgba(255, 255, 255, 0.9);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 1rem;
-    text-align: center;
-    width: 24rem;
-    margin-top: 0.5rem;
-    background: linear-gradient(to right, #f28c38, #f0c8a8);
-  }
+.mood-section {
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  text-align: center;
+  width: 24rem;
+  margin-top: 0.5rem;
+  background: linear-gradient(to right, #f28c38, #f0c8a8);
+}
 
-  .mood-section h2 {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #7c3aed;
-    margin-bottom: 1.5rem;
-  }
+.mood-section h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #7c3aed;
+  margin-bottom: 1.5rem;
+}
 
-  .mood-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-  }
+.mood-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
 
-  button {
-    padding: 0.5rem 1rem;
-    color: white;
-    border: none;
-    border-radius: 0.5rem;
-    font-size: 1rem;
-    cursor: pointer;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s;
-  }
+button {
+  padding: 0.5rem 1rem;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
 
-  button:hover {
-    transform: scale(1.05);
-  }
+button:hover {
+  transform: scale(1.05);
+}
 
-  .happy {
-    background: linear-gradient(to right, #facc15, #f87171);
-  }
+.happy {
+  background: linear-gradient(to right, #facc15, #f87171);
+}
 
-  .angry {
-    background: linear-gradient(to right, #f87171, #a855f7);
-  }
+.angry {
+  background: linear-gradient(to right, #f87171, #a855f7);
+}
 
-  .sad {
-    background: linear-gradient(to right, #60a5fa, #4ade80);
-  }
+.sad {
+  background: linear-gradient(to right, #60a5fa, #4ade80);
+}
 
-  .tired {
-    background: linear-gradient(to right, #4ade80, #facc15);
-  }
+.tired {
+  background: linear-gradient(to right, #4ade80, #facc15);
+}
 
-  .confused {
-    background: linear-gradient(to right, #d1d5db, #3b82f6);
-  }
+.confused {
+  background: linear-gradient(to right, #d1d5db, #3b82f6);
+}
 
-  .relaxed {
-    background: linear-gradient(to right, #2dd4bf, #3b82f6);
-  }
+.relaxed {
+  background: linear-gradient(to right, #2dd4bf, #3b82f6);
+}
 
-  .bubble-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-  }
-
-  .bubble {
-    position: absolute;
-    background: rgba(255, 255, 255, 0.9);
-    color: #000;
-    padding: 0.625rem 1.25rem;
-    border-radius: 1.25rem;
-    font-size: 1rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-
-  .histogram-section {
-    width: 100%;
-    max-width: 48rem;
-    margin-top: 2rem;
-  }
-
-  .histogram-section h3 {
-    font-size: 1.25rem;
-    font-weight: bold;
-    color: #7c3aed;
-    text-align: center;
-    margin-bottom: 1rem;
-    background-color: red;
-    height: 400px;
-  }
-
-  canvas {
-    width: 100%;
-    height: 300px;}
-
-
-    .excited {
-      background: linear-gradient(to right, #f43f5e, #ec4899);
-    }
-    
-
-/* Bubble container for floating responses */
 .bubble-container {
-  position: fixed; /* Ensure it overlays the page */
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  pointer-events: none; /* Ensure clicks go through */
-  z-index: 1000; /* Ensure it appears on top */
+  pointer-events: none;
 }
 
 .bubble {
   position: absolute;
-  bottom: 20px;
-  background: #ff6f61;
-  color: white;
-  padding: 8px 12px;
-  border-radius: 20px;
-  font-size: 14px;
-  animation: floatUp 4s ease-out forwards;
+  background: rgba(255, 255, 255, 0.9);
+  color: #000;
+  padding: 0.625rem 1.25rem;
+  border-radius: 1.25rem;
+  font-size: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.histogram-section {
+  width: 100%;
+  max-width: 48rem;
+  margin-top: 2rem;
+}
+
+.histogram-section h3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #7c3aed;
+  text-align: center;
+  margin-bottom: 1rem;
+  background-color: red;
+  height: 400px;
+}
+
+canvas {
+  width: 100%;
+  height: 300px;}
+
+
+  .excited {
+    background: linear-gradient(to right, #f43f5e, #ec4899);
+  }
+  
+
+/* Bubble container for floating responses */
+.bubble-container {
+position: fixed; /* Ensure it overlays the page */
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+pointer-events: none; /* Ensure clicks go through */
+z-index: 1000; /* Ensure it appears on top */
+}
+
+.bubble {
+position: absolute;
+bottom: 20px;
+background: #ff6f61;
+color: white;
+padding: 8px 12px;
+border-radius: 20px;
+font-size: 14px;
+animation: floatUp 4s ease-out forwards;
 }
 
 /* Floating animation */
 @keyframes floatUp {
-  0% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  100% {
-    opacity: 0;
-    transform: translateY(-200px);
-  }
+0% {
+  opacity: 1;
+  transform: translateY(0);
+}
+100% {
+  opacity: 0;
+  transform: translateY(-200px);
+}
 }
